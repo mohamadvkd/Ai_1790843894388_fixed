@@ -1,0 +1,21 @@
+name: ai
+description: A local AI chat app with llama.cpp support.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # مكتبة اختيار الملفات
+  file_picker: ^8.1.2
+  # مكتبة fllama الرسمية من المطور
+  fllama:
+    git:
+      url: https://github.com/Telosnex/fllama.git
+      ref: main
+
+flutter:
+  uses-material-design: true
